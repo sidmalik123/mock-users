@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "node app.js"
   },
-  "engines":{
-    "node" : "4.2.4"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "engines":{
+    "node" : "4.2.4"
   }
 }
