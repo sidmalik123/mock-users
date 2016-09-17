@@ -151,6 +151,19 @@ button{
 }
 /*loadbut styles---*/
 
+/*media queries*/
+@media only screen and (max-width: 850px) {
+    h1{
+    	font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+    	font-size: 40px;
+    }
+}
+
 
 
 
