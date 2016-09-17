@@ -69,6 +69,14 @@ button{
 	margin-bottom: 10px;
 }
 
+.image-section{
+	font-size: 15px;
+}
+
+.image-section .copied{
+	font-size: 14px;
+}
+
 .details{
 	list-style: none;
 	padding: 0;
@@ -93,10 +101,10 @@ button{
 
 }
 
-.details li a{
+.details li a, .copied{
 	float: right;
 	letter-spacing: .5px;
-	font-size: 10px;
+	font-size: 11px;
 }
 
 
@@ -106,6 +114,10 @@ button{
 	margin: auto;
 	word-wrap: break-word;
 	text-transform: capitalize;
+}
+
+.copied{
+	color: green;
 }
 /*user-card section ---*/
 

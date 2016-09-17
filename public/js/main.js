@@ -41,7 +41,25 @@ function toggleRefresh(){
 	}
 }
 
-new Clipboard('.copy')
+function copyDone(){
+
+}
+
+var clipboard = new Clipboard('.copy')
+
+clipboard.on('success', function(e) {
+    var copyClicked = e.trigger;
+    var field = $(copyClicked).parent();
+    var copiedAppended = $("<span class ='copied'>Copied</span>")
+    field.append(copiedAppended)
+    $(copyClicked).remove();
+
+   	copiedAppended.fadeOut(650, function(){
+		$(this).remove();
+		field.append(copyClicked);
+	})
+		
+});
 
 
 
